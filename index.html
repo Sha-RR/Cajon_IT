@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAJON SOLUTIONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="brand-wrap">
+
+      <!-- Hamburger Menu Button -->
+      <div class="menu-btn-wrap">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <!-- Dropdown Menu -->
+        <div class="hamburger-dropdown" id="hamburgerDropdown">
+          <div class="dropdown-section">
+            <span class="dropdown-label">Navigation</span>
+            <a href="#overview" class="dropdown-item" data-section="overview">Overview</a>
+            <a href="#innovative" class="dropdown-item" data-section="innovative">Innovative Approach</a>
+            <a href="#people" class="dropdown-item" data-section="people">People</a>
+            <a href="#labs" class="dropdown-item" data-section="labs">Labs</a>
+            <a href="#location" class="dropdown-item" data-section="location">Location</a>
+            <a href="#contact" class="dropdown-item" data-section="contact">Contact Us</a>
+          </div>
+          <div class="dropdown-section">
+            <span class="dropdown-label">Account</span>
+            <a href="#" class="dropdown-item">Sign In</a>
+            <a href="#" class="dropdown-item">Subscribe</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DNA SVG Logo -->
+      <div class="dna-logo">
+        <svg width="28" height="42" viewBox="0 0 28 42" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 2C18 11 10 31 22 40" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M22 2C10 11 18 31 6 40" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <line x1="9.5" y1="9"  x2="18.5" y2="9"  stroke="#111" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="8"   y1="16" x2="20"   y2="16" stroke="#111" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="8"   y1="23" x2="20"   y2="23" stroke="#111" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="9.5" y1="30" x2="18.5" y2="30" stroke="#111" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="logo">CAJON SOLUTIONS</div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#overview"    class="nav-link" data-section="overview">Overview</a>
+      <a href="#innovative"  class="nav-link" data-section="innovative">Innovative Approach</a>
+      <a href="#people"      class="nav-link" data-section="people">People</a>
+      <a href="#labs"        class="nav-link" data-section="labs">Labs</a>
+      <a href="#location"    class="nav-link" data-section="location">Location</a>
+      <a href="#contact"     class="nav-link" data-section="contact">Contact Us</a>
+    </nav>
+
+    <div class="top-actions">
+      <span class="search-icon">⌕</span>
+      <a href="#">Sign In / Subscribe</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main class="hero" id="home">
+    <!-- Particle canvas -->
+    <canvas id="particles"></canvas>
+
+    <div class="hero-center">
+      <h1 class="hero-title">CAJON</h1>
+      <div class="hero-divider"></div>
+      <p class="powered-text">SOLUTIONS powered by AI</p>
+    </div>
+
+    <div class="bottom-left">
+      AI-Driven Innovation for Smarter Healthcare
+    </div>
+
+    <div class="bottom-right">
+      <a href="#overview" class="learn-more">Learn more →</a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </main>
+
+  <!-- ===== OVERVIEW ===== -->
+  <section id="overview" class="section section-dark">
+    <div class="section-inner">
+      <div class="section-tag">Overview</div>
+      <h2 class="section-title">Redefining Healthcare <br>Through Intelligence</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        Cajon Solutions is a next-generation healthcare technology company that harnesses the power of artificial intelligence to transform patient outcomes, streamline clinical workflows, and empower medical professionals with data-driven insight.
+      </p>
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="card-icon">🧠</div>
+          <h3>AI-Powered Diagnostics</h3>
+          <p>Our proprietary models analyze medical imaging, lab results, and patient histories to surface actionable clinical insights in real time.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🔗</div>
+          <h3>Integrated Platform</h3>
+          <p>A unified ecosystem connecting hospitals, clinics, labs, and patients — reducing friction and accelerating care delivery across every touchpoint.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">📊</div>
+          <h3>Predictive Analytics</h3>
+          <p>Machine learning algorithms forecast patient risk, resource demand, and treatment efficacy — helping providers act before problems escalate.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🛡️</div>
+          <h3>HIPAA Compliant & Secure</h3>
+          <p>Built on a zero-trust security architecture, every data exchange is encrypted, audited, and compliant with the highest healthcare privacy standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INNOVATIVE APPROACH ===== -->
+  <section id="innovative" class="section section-mid">
+    <div class="section-inner">
+      <div class="section-tag">Innovative Approach</div>
+      <h2 class="section-title">Where Technology <br>Meets Compassion</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        We don't just apply AI — we engineer it around the human realities of healthcare. Our approach blends clinical expertise with cutting-edge research to build tools that physicians actually trust.
+      </p>
+      <div class="approach-list">
+        <div class="approach-item">
+          <span class="approach-num">01</span>
+          <div>
+            <h3>Clinician-Centered Design</h3>
+            <p>Every feature is co-developed with practicing physicians and nurses to ensure our tools fit seamlessly into real clinical workflows — not the other way around.</p>
+          </div>
+        </div>
+        <div class="approach-item">
+          <span class="approach-num">02</span>
+          <div>
+            <h3>Federated Learning</h3>
+            <p>Our models train across distributed hospital networks without ever moving sensitive patient data off-premise, preserving privacy while improving global accuracy.</p>
+          </div>
+        </div>
+        <div class="approach-item">
+          <span class="approach-num">03</span>
+          <div>
+            <h3>Explainable AI</h3>
+            <p>Clinicians deserve to understand the "why" behind every recommendation. Our XAI layer surfaces confidence scores, evidence trails, and alternative interpretations.</p>
+          </div>
+        </div>
+        <div class="approach-item">
+          <span class="approach-num">04</span>
+          <div>
+            <h3>Continuous Improvement Loops</h3>
+            <p>Real-world outcomes feed back into our models automatically — every patient encounter makes the system smarter, safer, and more personalised.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PEOPLE ===== -->
+  <section id="people" class="section section-dark">
+    <div class="section-inner">
+      <div class="section-tag">People</div>
+      <h2 class="section-title">The Doctors <br>Behind the Science</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        Our multidisciplinary team of physicians, researchers, and engineers brings decades of clinical experience to every line of code.
+      </p>
+      <div class="people-grid">
+        <div class="person-card">
+          <div class="person-avatar">👨‍⚕️</div>
+          <h3>Dr. [Name]</h3>
+          <span class="person-role">Chief Medical Officer</span>
+          <p>Board-certified cardiologist with 20+ years in interventional medicine. Leads clinical validation of all AI diagnostic modules.</p>
+        </div>
+        <div class="person-card">
+          <div class="person-avatar">👩‍⚕️</div>
+          <h3>Dr. [Name]</h3>
+          <span class="person-role">Head of Oncology AI</span>
+          <p>Specialises in precision oncology and genomic data interpretation. Oversees tumour-detection algorithm development.</p>
+        </div>
+        <div class="person-card">
+          <div class="person-avatar">👨‍🔬</div>
+          <h3>Dr. [Name]</h3>
+          <span class="person-role">Director of Research</span>
+          <p>PhD in Biomedical Engineering. Spearheads our federated learning infrastructure and academic partnerships.</p>
+        </div>
+        <div class="person-card">
+          <div class="person-avatar">👩‍🔬</div>
+          <h3>Dr. [Name]</h3>
+          <span class="person-role">Chief of Radiology AI</span>
+          <p>Radiologist and machine learning expert. Pioneers our imaging analysis pipeline used across 15 hospital networks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LABS ===== -->
+  <section id="labs" class="section section-mid">
+    <div class="section-inner">
+      <div class="section-tag">Labs</div>
+      <h2 class="section-title">Our Research <br>&amp; Development Labs</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        Cajon Labs is where the future of healthcare is prototyped. Across three specialised facilities, our teams push the boundaries of what clinical AI can achieve.
+      </p>
+      <div class="labs-grid">
+        <div class="lab-card">
+          <div class="lab-number">LAB 01</div>
+          <h3>Imaging &amp; Diagnostics Lab</h3>
+          <p>Focused on computer vision models for radiology, pathology, and dermatology. Our imaging lab processes over 2 million scans annually to train and validate detection algorithms.</p>
+          <div class="lab-tag">Deep Learning · Computer Vision · DICOM</div>
+        </div>
+        <div class="lab-card">
+          <div class="lab-number">LAB 02</div>
+          <h3>Genomics &amp; Precision Medicine Lab</h3>
+          <p>Decoding genetic data to personalise treatment plans. We partner with research hospitals to correlate genomic markers with treatment outcomes at scale.</p>
+          <div class="lab-tag">Genomics · NLP · Clinical Trials</div>
+        </div>
+        <div class="lab-card">
+          <div class="lab-number">LAB 03</div>
+          <h3>Predictive Health Lab</h3>
+          <p>Building longitudinal patient models that predict hospitalisation risk, chronic disease progression, and medication adherence — months before clinical symptoms appear.</p>
+          <div class="lab-tag">Time-Series · Risk Modelling · EHR</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCATION ===== -->
+  <section id="location" class="section section-dark">
+    <div class="section-inner">
+      <div class="section-tag">Location</div>
+      <h2 class="section-title">Our Clinics <br>&amp; Offices</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        Cajon Solutions operates across multiple locations, bringing AI-enhanced care closer to communities that need it most.
+      </p>
+      <div class="locations-grid">
+        <div class="location-card">
+          <div class="location-icon">📍</div>
+          <h3>Cajon — Main Campus</h3>
+          <p class="location-addr">[Street Address], Cajon, CA [ZIP]</p>
+          <p>Our flagship clinic and headquarters. Houses our primary diagnostic centre, executive offices, and the main research lab complex.</p>
+          <div class="location-hours">Mon – Fri: 7 am – 7 pm</div>
+        </div>
+        <div class="location-card">
+          <div class="location-icon">📍</div>
+          <h3>San Bernardino Clinic</h3>
+          <p class="location-addr">[Street Address], San Bernardino, CA [ZIP]</p>
+          <p>Full-service outpatient clinic offering AI-assisted diagnostics, preventive screening, and specialist referrals.</p>
+          <div class="location-hours">Mon – Sat: 8 am – 6 pm</div>
+        </div>
+        <div class="location-card">
+          <div class="location-icon">📍</div>
+          <h3>Redlands Medical Hub</h3>
+          <p class="location-addr">[Street Address], Redlands, CA [ZIP]</p>
+          <p>Collaborative care hub partnered with local hospital networks. Specialises in chronic disease management and telehealth integration.</p>
+          <div class="location-hours">Mon – Fri: 8 am – 5 pm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-mid">
+    <div class="section-inner">
+      <div class="section-tag">Contact Us</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead">
+        Whether you're a hospital administrator, researcher, or patient seeking care — our team is here to help.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>📧 Email</h3>
+          <p>General Inquiries: <a href="mailto:info@cajonsolutions.com">info@cajonsolutions.com</a></p>
+          <p>Partnerships: <a href="mailto:partnerships@cajonsolutions.com">partnerships@cajonsolutions.com</a></p>
+          <p>Support: <a href="mailto:support@cajonsolutions.com">support@cajonsolutions.com</a></p>
+        </div>
+        <div class="contact-block">
+          <h3>📞 Phone Numbers</h3>
+          <p>Main Campus: <strong>+1 (909) 000-0001</strong></p>
+          <p>San Bernardino: <strong>+1 (909) 000-0002</strong></p>
+          <p>Redlands Hub: <strong>+1 (909) 000-0003</strong></p>
+          <p>24/7 Support Line: <strong>+1 (800) 000-0000</strong></p>
+        </div>
+        <div class="contact-block">
+          <h3>🕐 Office Hours</h3>
+          <p>Headquarters: Mon – Fri, 8 am – 6 pm PST</p>
+          <p>Clinical Lines: Mon – Sat, 7 am – 7 pm PST</p>
+          <p>Emergency / On-Call: 24 / 7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg width="22" height="32" viewBox="0 0 28 42" xmlns="http://www.w3.org/2000/svg" style="opacity:.6">
+          <path d="M6 2C18 11 10 31 22 40" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M22 2C10 11 18 31 6 40" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <line x1="9.5" y1="9"  x2="18.5" y2="9"  stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="8"   y1="16" x2="20"   y2="16" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="8"   y1="23" x2="20"   y2="23" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="9.5" y1="30" x2="18.5" y2="30" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span>CAJON SOLUTIONS</span>
+      </div>
+      <p class="footer-copy">© 2026 Cajon Solutions. All rights reserved. | AI-Driven Innovation for Smarter Healthcare.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SECTION MODAL / PANEL ===== -->
+  <div id="sectionModal" class="section-modal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" id="modalPanel">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="modalContent" class="modal-content-inner"></div>
+    </div>
+  </div>
+
+  <!-- Floating Bot Button -->
+  <div class="chat-widget">
+    <button id="chatToggle" class="chat-toggle">
+      <div class="bot-icon">🤖</div>
+    </button>
+    <div id="chatPanel" class="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <span class="chat-avatar">🤖</span>
+          <div>
+            <h3>Agent</h3>
+            <p>Ask something</p>
+          </div>
+        </div>
+        <button id="closeChat" class="close-btn">&times;</button>
+      </div>
+      <div id="chatBox" class="chat-box"></div>
+      <div class="chat-input-area">
+        <input id="userInput" type="text" placeholder="Ask something..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ── Particles ────────────────────────────────── */
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let pts = [];
+    function resize(){ canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+    window.addEventListener('resize', resize);
+    resize();
+    for(let i=0;i<80;i++) pts.push({
+      x: Math.random()*canvas.width, y: Math.random()*canvas.height,
+      vx:(Math.random()-.5)*.3, vy:(Math.random()-.5)*.3,
+      r: Math.random()*1.5+.5, o: Math.random()*.5+.2
+    });
+    function animPts(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      pts.forEach(p=>{
+        p.x+=p.vx; p.y+=p.vy;
+        if(p.x<0||p.x>canvas.width) p.vx*=-1;
+        if(p.y<0||p.y>canvas.height) p.vy*=-1;
+        ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+        ctx.fillStyle=`rgba(140,180,255,${p.o})`; ctx.fill();
+      });
+      // connect nearby dots
+      for(let i=0;i<pts.length;i++) for(let j=i+1;j<pts.length;j++){
+        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, d=Math.sqrt(dx*dx+dy*dy);
+        if(d<120){ ctx.beginPath(); ctx.moveTo(pts[i].x,pts[i].y); ctx.lineTo(pts[j].x,pts[j].y);
+          ctx.strokeStyle=`rgba(140,180,255,${.15*(1-d/120)})`; ctx.lineWidth=.6; ctx.stroke(); }
+      }
+      requestAnimationFrame(animPts);
+    }
+    animPts();
+
+    /* ── Hamburger dropdown ───────────────────────── */
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const hamburgerDropdown = document.getElementById('hamburgerDropdown');
+    hamburgerBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      hamburgerBtn.classList.toggle('active');
+      hamburgerDropdown.classList.toggle('open');
+    });
+    document.addEventListener('click', () => {
+      hamburgerBtn.classList.remove('active');
+      hamburgerDropdown.classList.remove('open');
+    });
+    hamburgerDropdown.addEventListener('click', e => e.stopPropagation());
+
+    /* ── Scroll-reveal ────────────────────────────── */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.info-card, .approach-item, .person-card, .lab-card, .location-card, .contact-block, .section-title, .section-lead')
+      .forEach(el => observer.observe(el));
+
+    /* ── Chat widget ──────────────────────────────── */
+    const chatToggle = document.getElementById("chatToggle");
+    const chatPanel  = document.getElementById("chatPanel");
+    const closeChat  = document.getElementById("closeChat");
+    const sendBtn    = document.getElementById("sendBtn");
+    const userInput  = document.getElementById("userInput");
+    const chatBox    = document.getElementById("chatBox");
+    chatToggle.addEventListener("click", () => chatPanel.classList.toggle("open"));
+    closeChat.addEventListener("click",  () => chatPanel.classList.remove("open"));
+    sendBtn.addEventListener("click", sendMessage);
+    userInput.addEventListener("keypress", e => { if(e.key==="Enter") sendMessage(); });
+    async function sendMessage(){
+      const message = userInput.value.trim(); if(!message) return;
+      chatBox.innerHTML += `<div class="msg user-msg"><b>You:</b> ${message}</div>`;
+      userInput.value = ""; chatBox.scrollTop = chatBox.scrollHeight;
+      try {
+        const res = await fetch("http://127.0.0.1:8000/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message})});
+        const data = await res.json();
+        chatBox.innerHTML += `<div class="msg bot-msg"><b>Bot:</b> ${data.response}</div>`;
+      } catch {
+        chatBox.innerHTML += `<div class="msg bot-msg"><b>Bot:</b> Error connecting to backend.</div>`;
+      }
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    /* ── Nav active highlight on scroll ──────────── */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if(window.scrollY >= s.offsetTop - 120) cur = s.id; });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.dataset.section === cur);
+      });
+    });
+
+    /* ── Smooth scroll for all anchor links ──────── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+  </script>
+</body>
+</html>
